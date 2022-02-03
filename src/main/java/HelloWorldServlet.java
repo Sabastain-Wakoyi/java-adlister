@@ -1,20 +1,25 @@
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.*;
 
+@WebServlet(urlPatterns = "/hello")
 public class HelloWorldServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-        res.setContentType("text/html");
-        PrintWriter out = res.getWriter();
-        out.println("<html><body>");
-        out.println("Hello World!");
-        out.println("</body></html>");
-        out.close();
 
 
 
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+
+        String name = request.getParameter("name");
+        if (name == null){
+            response.getWriter().println("<h1>Hello World!</h1>");
+        }
+        else {
+            response.getWriter().println("<h1>Hello, " + name + "!<h1");
+//            System.out.println(name);
+//            out.println(String.format( "<h1>Hello, %s !</h1>", name));
+        }
     }
 }
