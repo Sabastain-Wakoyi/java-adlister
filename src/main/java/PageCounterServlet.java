@@ -3,7 +3,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-@WebServlet(name = "PageCountServlet", urlPatterns = "/count")
+@WebServlet(name = "PageCounterServlet", urlPatterns = "/count")
 public class PageCounterServlet extends HttpServlet {
     int count = 0;
 
