@@ -18,12 +18,10 @@ public class PizzaOrderServlet extends HttpServlet {
 //        String sausage = request.getParameter("sausage");
 //        String address = request.getParameter("address");
 //        System.out.println(crust);
-//        System.out.printf("""
-//        Crust: %s
-//        Sauce: %s
-//        Size: %s
-//        Address: %s
-//        """, crust, sauce, size, address);
+//        System.out.println(size);
+//        System.out.println(pepper);
+//        System.out.println(sausage);
+//        System.out.println(address);
 
     }
 
@@ -37,7 +35,11 @@ public class PizzaOrderServlet extends HttpServlet {
         String sausage = request.getParameter("sausage");
         String address = request.getParameter("address");
         System.out.println(crust);
-
+        System.out.println(sauce);
+        System.out.println(size);
+        System.out.println(pepper);
+        System.out.println(sausage);
+        System.out.println(address);
 
         // CREATE BRIDGE WITH DISPATCH REQUEST
         request.getRequestDispatcher("/pizza-order.jsp").forward(request, response);

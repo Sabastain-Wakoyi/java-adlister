@@ -8,9 +8,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+<%--    <%@include file="partials/head.jsp"%>--%>
+    <title>Guess a number</title>
 </head>
 <body>
+<%--    <div class="container">--%>
+<%--    <%@include file="partials/correct.jsp"%>--%>
+<%--    </div>--%>
+<%--    <div class="container">--%>
+<%--    <%@include file="partials/incorrect.jsp"%>--%>
+<%--    </div>--%>
+<%--    --%>
 
+    <h3> Choose a number</h3>
+<form action="/guess" method="post">
+    <button name="guess" value="1">1</button>
+    <button name="guess" value="2">1</button>
+    <button name="guess" value="3">1</button>
+
+</form>
 </body>
 </html>
