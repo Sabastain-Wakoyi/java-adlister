@@ -19,7 +19,7 @@
   <h2>Current Ads</h2>
   <c:forEach var="ad" items="${ads}">
     <div class="ad">
-      <h3>${ad.title}</h3>
+      <h2>${ad.title}</h2>
       <p>${ad.description}</p>
     </div>
   </c:forEach>
