@@ -4,19 +4,19 @@ public class BeanTest {
 
     public static void main(String[] args) {
 
-        ArrayList<Authors> group = new ArrayList<>();
+        ArrayList<Author> group = new ArrayList<>();
 
-        Authors author = new Authors();
+        Author author = new Author();
         author.setFirstName("Douglas");
         author.setLastName("Adams");
 
 
-        Authors author1 = new Authors();
+        Author author1 = new Author();
         author1.setFirstName("Mark");
         author1.setLastName("Twain");
 
 
-        Authors author2 = new Authors();
+        Author author2 = new Author();
         author2.setFirstName("Kurt");
         author2.setLastName("Vonnegut");
 
@@ -24,7 +24,7 @@ public class BeanTest {
         group.add(author1);
         group.add(author2);
 
-        for (Authors names : group){
+        for (Author names : group){
             System.out.println("names.getFirstName() = " + names.getFirstName());
             System.out.println("names.getLastName() = " + names.getLastName());
         }

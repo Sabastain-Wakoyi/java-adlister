@@ -1,10 +1,10 @@
 import java.io.Serializable;
 
-public class Authors implements Serializable {
+public class Author implements Serializable {
     private String firstName;
     private String lastName;
 
-    public Authors() {};
+    public Author() {};
 
     public String getFirstName() {
         return firstName;
@@ -22,6 +22,5 @@ public class Authors implements Serializable {
     public void setLastName(String firstName){
         this.lastName = lastName;
     }
-
 
 }
