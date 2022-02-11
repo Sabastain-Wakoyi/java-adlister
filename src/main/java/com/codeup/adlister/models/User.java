@@ -1,6 +1,7 @@
 package com.codeup.adlister.models;
 
 public class User {
+    public String getPassword;
     private long id;
     private String username;
     private String email;
