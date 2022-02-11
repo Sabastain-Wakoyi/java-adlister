@@ -11,6 +11,11 @@
     <div class="container">
         <h1>Welcome, ${sessionScope.user.username}!</h1>
     </div>
-
+<form method="GET" action="/ads/create">
+    <button type="submit">Create New Ad</button>
+</form>
+<form method="get">
+    <button type="Submit">View Ads Listing</button>
+</form>
 </body>
 </html>
